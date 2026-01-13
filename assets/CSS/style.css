@@ -1,0 +1,226 @@
+:root {
+  --max-width: 1200px;
+  --bg-main: #0B1F2A;
+  --bg-dark: #0F3D4C;
+  --accent: #1BCFC9;
+  --text-main: #EAF6F6;
+  --text-muted: #A9C4CC;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: var(--bg-main);
+  color: var(--text-main);
+}
+
+/* CONTAINER */
+.container {
+  max-width: var(--max-width);
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* HERO */
+.hero {
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, var(--bg-main), var(--bg-dark));
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.hero-buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+}
+
+.hero-image img {
+  width: 420px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+/* SECTIONS */
+.section {
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+}
+
+.section.dark {
+  background: var(--bg-dark);
+}
+
+.section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+/* SOBRE */
+.about-text {
+  max-width: 700px;
+  color: var(--text-muted);
+  margin: 0 auto;
+}
+
+.skills {
+  display: flex;
+  margin: 30px auto 0; 
+  padding-top: 1rem;
+  justify-content: center;
+  align-items: center;
+  gap:1rem;
+}
+
+.skills span {
+  display: inline-flex;
+  padding: 8px 16px;
+  text-align: center;
+  justify-content: center;
+  width: 120px;
+  background: var(--accent);
+  color: var(--bg-main);
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+/* CARDS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: var(--bg-main);
+  padding: 30px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: var(--text-muted);
+  margin-bottom: 15px;
+}
+
+.card span {
+  color: var(--accent);
+  font-size: 0.85rem;
+  margin-bottom: 20px;
+}
+
+.card.premium {
+  border: 1px solid var(--accent);
+}
+
+/* BOTÕES */
+.btn {
+  align-self: flex-end;
+  padding: 12px 28px;
+  background: var(--accent);
+  color: var(--bg-main);
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn.small {
+  padding: 10px 22px;
+  font-size: 0.9rem;
+}
+
+.btn.outline {
+  background: transparent;
+  border: 2px solid var(--accent);
+  color: var(--accent);
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(27,207,201,0.4);
+}
+
+/* CONTATO */
+.contact{
+    display: flex;
+    justify-content: center;
+}
+.contact a {
+  display: inline-block;
+  margin-right: 20px;
+  color: var(--accent);
+  font-size: 1.1rem;
+}
+
+/* ANIMAÇÃO */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 0.8s ease;
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-image img {
+    width: 280px;
+  }
+
+  .btn {
+    align-self: center;
+  }
+  
+  .reveal{
+    align-items: center;
+  }
+}
