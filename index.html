@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jeciel | Portfólio</title>
 
   <link rel="stylesheet" href="./assets/CSS/style.css">
@@ -10,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <header>
     <div class="container-nav">
@@ -24,7 +26,8 @@
       </nav>
     </div>
   </header>
-  <!-- HERO --> 
+
+  <!-- HERO -->
   <section class="hero" id="Inicio">
     <div class="container hero-content">
       <div class="hero-text">
@@ -46,40 +49,88 @@
     </div>
   </section>
 
-  <!-- SOBRE -->
-  <section class="section" id="sobre-mim">
-    <div class="container">
-      <h2>💻 Sobre mim 💻</h2>
-      <p class="about-text">
-        Sou estudante de Análise e Desenvolvimento de Sistemas, com interesse em tecnologia, desenvolvimento de software e na criação de soluções digitais aplicadas a problemas reais.<br> 
-        Possuo experiência em projetos acadêmicos e contato prático com sistemas corporativos, análise de dados e suporte técnico.
-      </p>
-      <p class="about-text">
-        Iniciei minha trajetória profissional como Aprendiz Administrativo na Becton Dickinson, onde tive contato direto com o ambiente de produção industrial e análise de processos de máquinas.<br> 
-        Atuei em atividades relacionadas a testes de qualidade, melhoria contínua e análise de desempenho de equipamentos (OEE), além de fornecer dados e relatórios para reuniões de supervisão internas e externas.<br>
-        Durante esse período, também desenvolvi relatórios, análises e dashboards, o que despertou meu interesse pela área de tecnologia e pelo uso de dados para gerar soluções mais eficientes.
-      </p>
-      <p class="about-text">
-        Atualmente atuo como Estagiário de Suporte Técnico N1/N2 na SaaSTec Labs, uma software house responsável por um sistema ERP de gestão para óticas.<br> 
-        Trabalho diretamente no atendimento e suporte a clientes, realizando análises técnicas, testes de novas versões do sistema antes da liberação em produção e identificação de erros da aplicação.<br> 
-        Também realizo consultas e manipulação de dados em banco utilizando SQL (SELECT, INSERT, UPDATE e DELETE) para tratar ocorrências e apoiar na resolução de problemas.
-      </p>
-      <p class="about-text">  
-        Além disso, participo da manutenção e evolução de uma aplicação interna da empresa, voltada para automatização de processos, desenvolvida em Python e integrada ao banco de dados, contribuindo para otimizar rotinas e melhorar a eficiência operacional.
-      </p>
-      <p class="about-text">
-        Busco constantemente aprimorar minhas habilidades em desenvolvimento de software e tecnologia, criando projetos próprios e aprofundando meus conhecimentos para construir soluções cada vez mais eficientes.
-      </p>
+  <section class="espacos">
+  </section>
 
-      <div class="skills">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-        <span>SQL</span>
-        <span>Python</span>
-        <span>Git & GitHub</span>
-        <span>Vercel</span>
+  <!-- SOBRE -->
+  <section class="notebook" id="sobre-mim">
+    <div class="tela-main">
+      <div class="tela-terminal-mac">
+        <div class="header-terminal-mac">
+          <div class="ctrl-terminal-mac">
+            <span class="botao vermelho"></span>
+            <span class="botao amarelo"></span>
+            <span class="botao verde"></span>
+          </div>
+
+          <div class="diretorio">
+            Sobre_mim.py -- ~/JecielTreska/Portfolio
+          </div>
+        </div>
+
+        <div class="body-terminal-mac">
+          <div class="linha-codigo delay-1"><span class="destaque-azul">import</span> profile_manager</div>
+          <div class="linha-codigo delay-2"><span class="destaque-azul">import</span> sys</div>
+          <div class="linha-codigo delay-3"><span class="codigo-comentario"># Inicializando perfil do desenvolvedor</span></div>
+          <div class="linha-codigo delay-4">dev = profile_manager.Developer(<span class="codigo-string">"Jeciel"</span>)
+          </div>
+          <div class="linha-codigo delay-5">dev.load_experience()</div>
+          <div class="linha-codigo delay-6">dev.display_bio()</div>
+          <div class="linha-codigo delay-7">sys.exit(0)</div>
+
+          <div class="divide-console delay-8">
+            ----------------------------------------------------
+          </div>
+          <div class="retorno-terminal">
+            <p class="linha-retorno-terminal delay-9">
+              <span class="destaque-info delay-9">[INFO]</span> Iniciando execução...
+            </p>
+
+            <div class="retorno-grupo-terminal delay-10">
+              <span class="destaque-retorno-terminal">QUEM SOU ></span>
+              <p>
+                Estudante de Análise e Desenvolvimento de Sistemas (ADS). Interessado em tecnologia, desenvolvimento de software e criação de soluções digitais para problemas reais. Experiência acadêmica e prática com sistemas corporativos, análise de dados e suporte técnico.
+              </p>
+            </div>
+
+            <div class="retorno-grupo-terminal delay-11">
+              <span class="destaque-retorno-terminal">TRAJETÓRIA PROFISSIONAL ></span>
+              <p>
+                Iniciei na <span class="destaque empresa">Becton Dickinson</span> como Aprendiz Administrativo. Atuei em ambiente industrial, análise de processos de máquinas (OEE), qualidade e relatórios. O desenvolvimento de dashboards despertou meu interesse por tecnologia e dados para eficiência.
+              </p>
+            </div>
+
+            <div class="retorno-grupo-terminal delay-12">
+              <span class="destaque-retorno-terminal">ATUALIDADE ></span>
+              <p>
+                Atuo como Estagiário de Suporte Técnico N1/N2 na <span class="destaque empresa">SaaSTec Labs</span>, com foco em ERP para óticas. Responsável por análise técnica, testes e identificação de erros.
+              </p>
+            </div>
+
+            <div class="retorno-grupo-terminal delay-13">
+              <span class="destaque-retorno-terminal">TECNOLOGIAS ></span>
+              <p>Manipulação de dados em banco utilizando <span class="destaque sql">SQL</span> (CRUD) e manutenção de aplicação interna para automação em <span class="destaque python">Python</span>.</p>
+              
+              <div class="tech-conhecidas">
+                  <span class="tech">HTML</span> <span class="tech">CSS</span> <span class="tech">JavaScript</span> 
+                  <span class="tech sql">SQL</span> <span class="tech python">Python</span> 
+                  <span class="tech">Git</span> <span class="tech">GitHub</span> <span class="tech">Vercel</span>
+              </div>
+            </div>
+
+            <p class="linha-retorno-terminal delay-14">
+              <span class="status-successo">[SUCESSO]</span> Execução concluída.
+            </p>
+
+            <div class="final-cursor delay-15">user@dev:~/dev/portifolio$ <span class="cursor">_</span></div>
+          </div>
+        </div>
       </div>
+    </div>
+    <div class="controls">
+      <button onclick="restartAnimation()" class="btn-restart">
+        <span class="icon">↻</span> Reiniciar Terminal
+      </button>
     </div>
   </section>
 
@@ -117,29 +168,41 @@
 
       <div class="cards-profi">
         <div class="card premium reveal">
-          <h3 class="escFourLayers"><center>Four Layers Odontologia</center></h3>
-          
+          <h3 class="escFourLayers">
+            <center>Four Layers Odontologia</center>
+          </h3>
+
           <p>
-            Desenvolvimento de site institucional responsivo para clínica odontológica, com foco em experiência do usuário, clareza visual e conversão. 
-            O projeto foi concebido para transmitir confiança, profissionalismo e atendimento humanizado, facilitando o acesso às informações e o contato 
+            Desenvolvimento de site institucional responsivo para clínica odontológica, com foco em experiência do
+            usuário, clareza visual e conversão.
+            O projeto foi concebido para transmitir confiança, profissionalismo e atendimento humanizado, facilitando o
+            acesso às informações e o contato
             direto com a clínica.
           </p>
 
           <p>
-            Implementado com HTML, CSS e JavaScript puro, o site possui layout totalmente responsivo, adaptação para dispositivos móveis e otimização de performance. 
-            Conta com integração direta com WhatsApp para captação de leads, formulário funcional de contato, mapa interativo via Google Maps e navegação intuitiva.
+            Implementado com HTML, CSS e JavaScript puro, o site possui layout totalmente responsivo, adaptação para
+            dispositivos móveis e otimização de performance.
+            Conta com integração direta com WhatsApp para captação de leads, formulário funcional de contato, mapa
+            interativo via Google Maps e navegação intuitiva.
           </p>
 
           <p>
-            O desenvolvimento seguiu boas práticas de UX/UI, acessibilidade e organização visual, garantindo uma presença digital profissional, moderna e alinhada 
-            às necessidades do público da clínica. O projeto foi versionado com Git, hospedado no GitHub e publicado em produção por meio do Vercel.
+            O desenvolvimento seguiu boas práticas de UX/UI, acessibilidade e organização visual, garantindo uma
+            presença digital profissional, moderna e alinhada
+            às necessidades do público da clínica. O projeto foi versionado com Git, hospedado no GitHub e publicado em
+            produção por meio do Vercel.
           </p>
           <span>HTML • CSS • JavaScript • Git & GitHub • Vercel</span>
 
-          <a href="https://fourlayers.com.br" target="_blank" rel="noopener noreferrer" class="btn small"> Visitar Projeto </a>
+          <a href="https://fourlayers.com.br" target="_blank" rel="noopener noreferrer" class="btn small"> Visitar
+            Projeto </a>
         </div>
       </div>
     </div>
+  </section>
+
+  <section class="espacos">
   </section>
 
   <!-- CONTATO -->
@@ -148,7 +211,8 @@
       <h2>Contato</h2>
       <div class="contact">
         <a href="#" id="whatsapp-link">WhatsApp</a>
-        <a href="https://www.linkedin.com/in/jecieltreskadasilva/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/jecieltreskadasilva/" target="_blank"
+          rel="noopener noreferrer">LinkedIn</a>
         <a href="https://github.com/homaranha" target="_blank" rel="noopener noreferrer">GitHub</a>
         <a href="mailto:jecieltreska@gmail.com">Email</a>
       </div>
@@ -157,4 +221,5 @@
 
   <script src="./assets/JS/script.js"></script>
 </body>
+
 </html>

@@ -36,3 +36,14 @@ document.getElementById("whatsapp-link").addEventListener("click", (e) => {
   e.preventDefault(); // impede comportamento padrão do link
   window.open(url, "_blank");
 });
+
+function restartAnimation() {
+  // Seleciona o onde que tem as animações
+  const container = document.querySelector('.tela-terminal-mac');
+  
+  // Clona o elemento para resetar completamente o estado do DOM
+  const clone = container.cloneNode(true);
+  
+  // Substitui o antigo pelo novo
+  container.parentNode.replaceChild(clone, container);
+}
