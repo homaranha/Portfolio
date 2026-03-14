@@ -460,7 +460,7 @@ nav.primary {
 .delay-7 { animation: fadeInSlideUp 0.3s forwards; animation-delay: 4.2s; }
 .delay-8 { animation: fadeInSlideUp 0.3s forwards; animation-delay: 4.8s; }
 .delay-9 { animation: fadeInSlideUp 0.3s forwards; animation-delay: 4.8s; }
-.delay-10 { animation: fadeInSlideUp 0.4s forwards; animation-delay: 7.0s; }
+.delay-10 { animation: fadeInSlideUp 0.4s forwards; animation-delay: 7.1s; }
 .delay-11 { animation: fadeInSlideUp 0.4s forwards; animation-delay: 7.6s; }
 .delay-12 { animation: fadeInSlideUp 0.4s forwards; animation-delay: 8.2s; }
 .delay-13 { animation: fadeInSlideUp 0.4s forwards; animation-delay: 8.8s; }
@@ -539,7 +539,6 @@ nav.primary {
     margin: 10px 0;
   }
   
-  .delay-10 { animation-delay: 1.0s; } 
 }
 
 
