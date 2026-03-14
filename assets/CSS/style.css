@@ -119,7 +119,7 @@ nav.primary {
 
 .hero-text h1 {
   font-size: 3rem;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .hero-text p {
@@ -274,7 +274,7 @@ nav.primary {
 }
 
 .btn.outline {
-  background: transparent;
+  background: #0f003146;
   border: 2px solid var(--accent);
   color: var(--accent);
 }
@@ -570,14 +570,23 @@ nav.primary {
 
 /* RESPONSIVO */
 @media (max-width: 900px) {
+  .hero{
+    align-items: end;
+    padding-bottom: 10px;
+  }
   .hero-content {
-    flex-direction: column;
-    justify-content: end;
+    display: flex;
+    justify-content: center;
     text-align: center;
   }
-
+  .hero-text{
+   display: flex;
+   flex-direction: column;
+   
+  }
   .hero-text h1 {
     font-size: 2.2rem;
+    margin-bottom: 5px;
   }
 
   .hero-buttons {
