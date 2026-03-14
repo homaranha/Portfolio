@@ -573,6 +573,10 @@ nav.primary {
   .hero{
     align-items: end;
     padding-bottom: 10px;
+    background: linear-gradient(10deg, var(--bg-main), transparent), url(/assets/image/Cartoon.png);
+    background-size: cover;
+    background-position: center 45%;
+    background-repeat: no-repeat;
   }
   .hero-content {
     display: flex;
