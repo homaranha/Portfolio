@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jeciel | Portfólio</title>
+  <title> Jeciel | Portfólio </title>
 
   <link rel="stylesheet" href="./assets/CSS/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,17 +13,33 @@
 </head>
 
 <body>
-  <header>
+  <header class="cabecalho">
     <div class="container-nav">
       <nav class="primary">
         <ul class="nav">
-          <li><a href="#Inicio">Inicio</a></li>
-          <li><a href="#sobre-mim">Sobre mim</a></li>
-          <li><a href="#estudos">Projetos de Estudo</a></li>
-          <li><a href="#proj-profissional">Projetos Profissionais</a></li>
-          <li><a href="#contato">Contato</a></li>
+          <li><a href="#Inicio" class="nav-link">Início</a></li>
+          <li><a href="#sobre-mim" class="nav-link">Sobre mim</a></li>
+          <li><a href="#estudos" class="nav-link">Projetos de Estudo</a></li>
+          <li><a href="#proj-profissional" class="nav-link">Projetos Profissionais</a></li>
+          <li><a href="#contato" class="nav-link">Contato</a></li>
         </ul>
       </nav>
+
+      <!-- menu para celular -->
+      <div class="nav-mobile">
+        <button class="icone-celular" id="navCelular" aria-expanded="false" aria-controls="MenuCelular" aria-label="Abrir menu">
+          ☰
+        </button>
+      </div>
+      <div class="menu-celular hidden" id="menuCelular">
+        <ul class="nav">
+          <li><a href="#Inicio" class="nav-link">Início</a></li>
+          <li><a href="#sobre-mim" class="nav-link">Sobre mim</a></li>
+          <li><a href="#estudos" class="nav-link">Projetos de Estudo</a></li>
+          <li><a href="#proj-profissional" class="nav-link">Projetos Profissionais</a></li>
+          <li><a href="#contato" class="nav-link">Contato</a></li>
+        </ul>
+      </div>
     </div>
   </header>
 
@@ -143,19 +159,19 @@
         <div class="card reveal">
           <h3>Sistema de Tarefas</h3>
           <p>Projeto CRUD focado em lógica e organização de dados.</p>
-          <span>HTML • CSS • JS</span>
+          <span>HTML • CSS • JavaScript</span>
         </div>
 
         <div class="card reveal">
           <h3>Portfólio Responsivo</h3>
           <p>Layout moderno focado em responsividade e UI.</p>
-          <span>HTML • CSS</span>
+          <span>HTML • CSS • JavaScript</span>
         </div>
 
         <div class="card reveal">
           <h3>Automação em Python</h3>
           <p>Scripts para automação de tarefas.</p>
-          <span>Python</span>
+          <span>Python • PostgreSQL</span>
         </div>
       </div>
     </div>
@@ -193,7 +209,7 @@
             às necessidades do público da clínica. O projeto foi versionado com Git, hospedado no GitHub e publicado em
             produção por meio do Vercel.
           </p>
-          <span>HTML • CSS • JavaScript • Git & GitHub • Vercel</span>
+          <span>HTML • CSS • JavaScript • Git & GitHub • Vercel • Google Tag Manager</span>
 
           <a href="https://fourlayers.com.br" target="_blank" rel="noopener noreferrer" class="btn small"> Visitar
             Projeto </a>

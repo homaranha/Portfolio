@@ -60,7 +60,7 @@ header {
   padding: 0.6rem 1rem;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between !important;
   gap: var(--gap);
   background-color: #04295081;
   backdrop-filter: blur(1px);
@@ -97,6 +97,16 @@ nav.primary {
   background: linear-gradient(90deg, #00173081, var(--bg-main));
   background-color: var(--accent);
   color: #fff;
+}
+.menu-celular{
+  display: none;
+}
+.icone-celular{
+  display: none;
+  border:0;
+  background:transparent;
+  padding:0.4rem;
+  border-radius:8px;
 }
 
 /* HERO */
@@ -570,6 +580,106 @@ nav.primary {
 
 /* RESPONSIVO */
 @media (max-width: 900px) {
+  /* container do header */
+  .container-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: none;
+  }
+
+  /* botão hamburger */
+  .nav-mobile {
+    display: flex;
+    width: 100%;
+  }
+
+  .icone-celular {
+    display: flex;
+    border: 0;
+    background: transparent;
+    font-size: 1.5rem;
+    color: var(--accent);
+    background-color: #04295081;
+    backdrop-filter: blur(1px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 15px;
+    padding: 7px 15px;
+  }
+
+  .nav-mobile {
+    display: flex;
+  }
+
+  nav.primary {
+    display: none;
+  }
+
+  .hidden {
+    display: none !important;
+  }
+
+  /* container do menu */
+  .menu-celular {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    animation: fadeDown 0.3s ease;
+  }
+
+  /* caixa do menu */
+  .menu-celular .nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 320px;
+    gap: 0.6rem;
+    background: rgba(4, 41, 80, 0.95);
+    backdrop-filter: blur(12px);
+    padding: 1rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  }
+
+  .menu-celular .nav li {
+    width: 100%;
+  }
+
+  .menu-celular .nav a {
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 600;
+    color: var(--accent);
+    transition: all 0.2s ease;
+  }
+
+  .menu-celular .nav a:hover {
+    background: linear-gradient(90deg, #00173081, var(--bg-main));
+    color: #fff;
+    transform: scale(1.02);
+  }
+
+  /* animação */
+  @keyframes fadeDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
   .hero{
     align-items: end;
     padding-bottom: 10px;
