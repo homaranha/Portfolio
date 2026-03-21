@@ -588,6 +588,7 @@ nav.primary {
     width: 100%;
     background: none;
     backdrop-filter: blur(0px);
+    border-bottom: 0px;
   }
 
   /* botão hamburger */
